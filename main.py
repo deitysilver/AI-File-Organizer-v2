@@ -24,8 +24,7 @@ def get_folder_for_file(file, folders, gemini_response):
 
 directory = os.getcwd()
 
-folders = [f for f in os.listdir(directory) if os.path.isdir(os.path.join(directory, f)) and f != 'qwen1']
-
+folders = [f for f in os.listdir(directory) if os.path.isdir(os.path.join(directory, f))]
 files = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f)) and f != 'main.py']
 
 print(f"Folders: {folders}")
