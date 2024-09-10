@@ -4,7 +4,7 @@ import ollama
 import google.generativeai as genai
 
 model = "qwen2:1.5b"
-genai.configure(api_key="")
+genai.configure(api_key="YOUR_API_KEY")
 
 def get_structure(folders, file):
     model = genai.GenerativeModel("gemini-1.5-flash")
